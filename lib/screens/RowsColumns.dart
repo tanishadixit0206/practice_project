@@ -7,12 +7,12 @@ class RowColumnTutorial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Rows and Columns"),
+        title: const Text("Rows and Columns"),backgroundColor: Colors.deepPurple.shade200,
         centerTitle: true,
       ),
       body: Container(
-        color: Colors.purple,
-        child: Column(
+        color: Colors.purple.shade200,
+        child: const Column(
           children: [
             Row(
               children: [
@@ -36,13 +36,13 @@ class RowColumnTutorial extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            Row(mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.star, size: 35.0),
                 Icon(Icons.star, size: 35.0),
                 Icon(Icons.star, size: 35.0),
-                Icon(Icons.star, size: 35.0),
-                Icon(Icons.star, size: 35.0),
+                Icon(Icons.star_border, size: 35.0),
+                Icon(Icons.star_border, size: 35.0),
               ],
             ),
             Row(

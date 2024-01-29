@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/Dashboard.dart';
 import 'screens/Home.dart';
 import 'screens/RowsColumns.dart';
+import 'screens/listView.dart';
 
 void main() => runApp(
     MyApp()); // simplified into one-line by removing {} and replacing with =>
@@ -13,12 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //Material App widget. An application that uses material design
-      debugShowCheckedModeBanner: false,
-      title: 'My Flutter App', //App name
-      themeMode: ThemeMode.system,
-      home: RowColumnTutorial(),
-    );
+        //Material App widget. An application that uses material design
+        debugShowCheckedModeBanner: false,
+        title: 'My Flutter App', //App name
+        themeMode: ThemeMode.system,
+        home: ListViewTutorial());
+    //RowColumnTutorial(),);
     //Home());
     //Dashboard());
   }
